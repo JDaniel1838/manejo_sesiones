@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(-225deg, rgba(163, 69, 178, 0.555) 0%, rgba(212, 24, 115, 0.43) 52%, rgba(0, 0, 0, 0.5) 100%), url("/img/bg.jpg");
+    color: black;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+/* -----------------LOGO--------------- */
+main .logo{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 8rem;
+    color:#ffff;
+    padding: 0 2rem;
+    font-weight: 800;
+}
+
+/* ------------------------------------ */
+
+
+/* ------------------LOGIN-------------- */
+main .login {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form h2{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+form input[type="text"]{
+    height: auto;
+    font-size: 1.1rem;
+    color: #434343;
+    padding: .5rem .8rem;
+    margin: .5rem 0;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: .3s;
+    outline: none;
+    width: 70%;
+}
+
+form input[type="text"]:focus{
+    border: 3px solid rgba(255, 0, 13, 0.589);
+}
+
+form input[type="submit"]{
+    margin-top:2rem ;
+    font-size: 1rem;
+    width: 9rem;
+    height: 2.8rem;
+    background-color: #E50914;
+    border: 1px solid #E50914;
+    color: #fff;
+    text-align: center;
+    border-radius:5px ;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------- */
+
+
+
+/* ALERTA DATOS INCORRECTOS */
+.alert{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -100;
+}
+
+.alert.active{
+    visibility: visible;
+    opacity: 1;
+    width:100%;
+    position: absolute;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .3s;
+    z-index: 10;
+}
+
+.alert div{
+    width: 40%;
+    height: 15rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.9);
+    border-radius: 20px;
+    transition: .3s;
+    color: #434343;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert div h3{
+    font-size: 1.8rem;
+    margin: 1rem auto;
+}
+
+.alert div button{
+    margin-top:2rem ;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 3.8rem;
+    
+    height: 3.8rem;
+    background-color: #E50914;
+    border: 1px solid #E50914;
+    color: #fff;
+    text-align: center;
+    border-radius:50% ;
+    cursor: pointer;
+}
+
+/* ----------------------------------- */
